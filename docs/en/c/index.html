@@ -10,19 +10,19 @@
       
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
     
     
       
-        <title>Python Smart Contracts Development Cook Book</title>
+        <title>Codon代码与C代码的相互调用 - Python Smart Contracts Development Cook Book</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.240905d7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.240905d7.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -38,14 +38,16 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+  
+  <link rel="stylesheet" href="../../css/chat-dialog-plugin.css">
+</head>
   
   
     
@@ -62,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#codonc" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -74,7 +81,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Python Smart Contracts Development Cook Book" class="md-header__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
+    <a href="../" title="Python Smart Contracts Development Cook Book" class="md-header__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Codon代码与C代码的相互调用
             
           </span>
         </div>
@@ -111,13 +118,13 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/./" hreflang="en" class="md-select__link">
+                  <a href="../../c/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
               
                 <li class="md-select__item">
-                  <a href="/./zh/" hreflang="zh" class="md-select__link">
+                  <a href="../../zh/c/" hreflang="zh" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -165,7 +172,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Python Smart Contracts Development Cook Book" class="md-nav__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
+    <a href="../" title="Python Smart Contracts Development Cook Book" class="md-nav__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -196,7 +203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/env/" class="md-nav__link">
+      <a href="../env/" class="md-nav__link">
         Development Environment Setup
       </a>
     </li>
@@ -211,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/helloworld/" class="md-nav__link">
+      <a href="../helloworld/" class="md-nav__link">
         HelloWorld
       </a>
     </li>
@@ -226,7 +233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deploy/" class="md-nav__link">
+      <a href="../deploy/" class="md-nav__link">
         Deploying a Smart Contract
       </a>
     </li>
@@ -241,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/prelude/" class="md-nav__link">
+      <a href="../prelude/" class="md-nav__link">
         Prerequisite Knowledge
       </a>
     </li>
@@ -256,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/action/" class="md-nav__link">
+      <a href="../action/" class="md-nav__link">
         Inline Actions
       </a>
     </li>
@@ -271,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/notify/" class="md-nav__link">
+      <a href="../notify/" class="md-nav__link">
         The `require_recipient` function
       </a>
     </li>
@@ -286,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/database/" class="md-nav__link">
+      <a href="../database/" class="md-nav__link">
         Database Operations
       </a>
     </li>
@@ -301,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/crypto/" class="md-nav__link">
+      <a href="../crypto/" class="md-nav__link">
         Cryptographic functions
       </a>
     </li>
@@ -316,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common/" class="md-nav__link">
+      <a href="../common/" class="md-nav__link">
         Common Smart Contract Functions
       </a>
     </li>
@@ -331,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/abi/" class="md-nav__link">
+      <a href="../abi/" class="md-nav__link">
         Explanation of ABI types
       </a>
     </li>
@@ -346,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/codon/" class="md-nav__link">
+      <a href="../codon/" class="md-nav__link">
         Differences between Codon and standard Python
       </a>
     </li>
@@ -370,6 +377,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codonc_1" class="md-nav__link">
+    在Codon代码里调用C代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ccodon" class="md-nav__link">
+    在C代码里调用Codon代码
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -381,8 +412,27 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="codonc">Codon代码与C代码的相互调用</h1>
+<h2 id="codonc_1">在Codon代码里调用C代码</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">C</span> <span class="kn">import</span> <span class="n">say_hello</span><span class="p">(</span><span class="n">cobj</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<h2 id="ccodon">在C代码里调用Codon代码</h2>
+<div class="highlight"><pre><span></span><code><span class="nd">@export</span>
+<span class="k">def</span> <span class="nf">print_string</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">cobj</span><span class="err">，</span> <span class="nb">len</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -414,11 +464,18 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.19047be9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
       
     
-  </body>
+  
+<script>
+console.log("hello, plugin")
+var mkdocs_chat_plugin = {'param': '', 'docs_chat_endpoint': 'https://127.0.0.1/chat'};
+</script>
+<script src="../../js/chat-dialog-plugin.js"></script>
+
+        </body>
 </html>

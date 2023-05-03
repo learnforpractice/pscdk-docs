@@ -9,24 +9,24 @@
       
       
       
-        <link rel="prev" href="../common/">
+        <link rel="prev" href="../crypto/">
       
       
-        <link rel="next" href="../codon/">
+        <link rel="next" href="../abi/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
     
     
       
-        <title>Explanation of ABI types - Python Smart Contracts Development Cook Book</title>
+        <title>Common Smart Contract Functions - Python Smart Contracts Development Cook Book</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.240905d7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.240905d7.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -50,7 +50,7 @@
     
     
   
-  <link rel="stylesheet" href="../css/chat-dialog-plugin.css">
+  <link rel="stylesheet" href="../../css/chat-dialog-plugin.css">
 </head>
   
   
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explanation-of-abi-types" class="md-skip">
+        <a href="#common-smart-contract-functions" class="md-skip">
           Skip to content
         </a>
       
@@ -85,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Python Smart Contracts Development Cook Book" class="md-header__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
+    <a href="../" title="Python Smart Contracts Development Cook Book" class="md-header__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Explanation of ABI types
+              Common Smart Contract Functions
             
           </span>
         </div>
@@ -122,13 +122,13 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="./" hreflang="en" class="md-select__link">
+                  <a href="../../common/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
               
                 <li class="md-select__item">
-                  <a href="../zh/abi/" hreflang="zh" class="md-select__link">
+                  <a href="../../zh/common/" hreflang="zh" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Smart Contracts Development Cook Book" class="md-nav__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
+    <a href="../" title="Python Smart Contracts Development Cook Book" class="md-nav__button md-logo" aria-label="Python Smart Contracts Development Cook Book" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -325,21 +325,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../common/" class="md-nav__link">
-        Common Smart Contract Functions
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -352,12 +337,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Explanation of ABI types
+          Common Smart Contract Functions
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Explanation of ABI types
+        Common Smart Contract Functions
       </a>
       
         
@@ -376,50 +361,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#built-in-abi-types" class="md-nav__link">
-    Built-in ABI types
+  <a href="#is_account" class="md-nav__link">
+    is_account
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#correspondence-table-of-built-in-data-types-in-abi-and-data-types-in-python" class="md-nav__link">
-    Correspondence table of built-in data types in ABI and data types in Python
+  <a href="#has_auth" class="md-nav__link">
+    has_auth
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#special-abi-types" class="md-nav__link">
-    Special ABI types
-  </a>
-  
-    <nav class="md-nav" aria-label="Special ABI types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
-    Optional
+  <a href="#require_authrequire_auth2" class="md-nav__link">
+    require_auth/require_auth2
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#variant" class="md-nav__link">
-    Variant
+      
+        <li class="md-nav__item">
+  <a href="#publication_timecurrent_time" class="md-nav__link">
+    publication_time/current_time
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#binaryextension" class="md-nav__link">
-    Binaryextension
+      
+        <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    Example Code:
+  </a>
   
 </li>
       
@@ -427,6 +406,21 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abi/" class="md-nav__link">
+        Explanation of ABI types
+      </a>
     </li>
   
 
@@ -473,50 +467,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#built-in-abi-types" class="md-nav__link">
-    Built-in ABI types
+  <a href="#is_account" class="md-nav__link">
+    is_account
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#correspondence-table-of-built-in-data-types-in-abi-and-data-types-in-python" class="md-nav__link">
-    Correspondence table of built-in data types in ABI and data types in Python
+  <a href="#has_auth" class="md-nav__link">
+    has_auth
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#special-abi-types" class="md-nav__link">
-    Special ABI types
-  </a>
-  
-    <nav class="md-nav" aria-label="Special ABI types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
-    Optional
+  <a href="#require_authrequire_auth2" class="md-nav__link">
+    require_auth/require_auth2
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#variant" class="md-nav__link">
-    Variant
+      
+        <li class="md-nav__item">
+  <a href="#publication_timecurrent_time" class="md-nav__link">
+    publication_time/current_time
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#binaryextension" class="md-nav__link">
-    Binaryextension
+      
+        <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    Example Code:
+  </a>
   
 </li>
       
@@ -538,191 +526,79 @@
   
 
 
-<h1 id="explanation-of-abi-types">Explanation of ABI types</h1>
-<h2 id="built-in-abi-types">Built-in ABI types</h2>
-<p>Here are the built-in ABI types, a total of 31:</p>
-<ul>
-<li>Basic types: name bytes string</li>
-<li>Numerical types: bool int8 uint8 int16 uint16 int32 uint32 int64 uint64 int128 uint128 varint32 varuint32 float32 float64 float128</li>
-<li>Time-related: time_point time_point_sec block_timestamp_type</li>
-<li>Password-related functions: checksum160 checksum256 checksum512 public_key signature</li>
-<li>Token-related: symbol symbol_code asset extended_asset</li>
-</ul>
-<p>The following are the most commonly used:</p>
-<div class="highlight"><pre><span></span><code>name bytes string bool uint64 checksum256
-public_key signature symbol asset extended_asset
+<h1 id="common-smart-contract-functions">Common Smart Contract Functions</h1>
+<h2 id="is_account">is_account</h2>
+<p>Declaration:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_account</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">Name</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="o">...</span>
 </code></pre></div>
-<h2 id="correspondence-table-of-built-in-data-types-in-abi-and-data-types-in-python">Correspondence table of built-in data types in ABI and data types in Python</h2>
-<p>The table below shows the correspondence between the built-in types in ABI and the types in Python.</p>
-<p>It should be noted that although some of these types corresponding to Python belong to different modules, they have all been imported into the global environment in advance. Therefore, developers can directly use these ABI types corresponding to Python without needing to import them in the following way:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">chain.crypto</span> <span class="kn">import</span> <span class="n">PublicKey</span>
+<p>Explanation:</p>
+<p>Used to determine if an account exists.</p>
+<h2 id="has_auth">has_auth</h2>
+<p>Declaration:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">has_auth</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">Name</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="o">...</span>
 </code></pre></div>
-<p>Of course, repeated imports will not have any impact.</p>
-<table>
-<thead>
-<tr>
-<th align="center">ABI Type</th>
-<th align="center">Python Type</th>
-<th align="center">Module</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">bool</td>
-<td align="center">bool</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">int8</td>
-<td align="center">i8</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">uint8</td>
-<td align="center">u8</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">int16</td>
-<td align="center">i16</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">int32</td>
-<td align="center">i32</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">uint32</td>
-<td align="center">u32</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">int64</td>
-<td align="center">i64</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">uint64</td>
-<td align="center">u64</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">int128</td>
-<td align="center">i128</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">uint128</td>
-<td align="center">u128</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">varint32</td>
-<td align="center">VarInt32</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">varuint32</td>
-<td align="center">VarUint32</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">float32</td>
-<td align="center">float32</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">float64</td>
-<td align="center">float</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">float128</td>
-<td align="center">Float128</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">time_point</td>
-<td align="center">TimePoint</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">time_point_sec</td>
-<td align="center">TimePointSec</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">block_timestamp_type</td>
-<td align="center">BlockTimestampType</td>
-<td align="center">Structs</td>
-</tr>
-<tr>
-<td align="center">name</td>
-<td align="center">Name</td>
-<td align="center">Name</td>
-</tr>
-<tr>
-<td align="center">bytes</td>
-<td align="center">bytes</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">string</td>
-<td align="center">str</td>
-<td align="center">Built-in</td>
-</tr>
-<tr>
-<td align="center">checksum160</td>
-<td align="center">Checksum160</td>
-<td align="center">Crypto</td>
-</tr>
-<tr>
-<td align="center">checksum256</td>
-<td align="center">Checksum256/u256</td>
-<td align="center">Crypto</td>
-</tr>
-<tr>
-<td align="center">checksum512</td>
-<td align="center">Checksum512</td>
-<td align="center">Crypto</td>
-</tr>
-<tr>
-<td align="center">public_key</td>
-<td align="center">PublicKey</td>
-<td align="center">Crypto</td>
-</tr>
-<tr>
-<td align="center">signature</td>
-<td align="center">Signature</td>
-<td align="center">Crypto</td>
-</tr>
-<tr>
-<td align="center">symbol</td>
-<td align="center">Symbol</td>
-<td align="center">Asset</td>
-</tr>
-<tr>
-<td align="center">symbol_code</td>
-<td align="center">SymbolCode</td>
-<td align="center">Asset</td>
-</tr>
-<tr>
-<td align="center">asset</td>
-<td align="center">Asset</td>
-<td align="center">Asset</td>
-</tr>
-<tr>
-<td align="center">extended_asset</td>
-<td align="center">ExtendedAsset</td>
-<td align="center">Asset</td>
-</tr>
-</tbody>
-</table>
-<h2 id="special-abi-types">Special ABI types</h2>
-<h3 id="optional">Optional</h3>
-<h3 id="variant">Variant</h3>
-<h3 id="binaryextension">Binaryextension</h3>
+<p>Explanation:</p>
+<p>Used to determine if the 'active' permission of the specified account is present, i.e. whether the Transaction is signed with the private key corresponding to the 'active' permission of the specified account. There is at least one corresponding private key, and possibly multiple.</p>
+<h2 id="require_authrequire_auth2">require_auth/require_auth2</h2>
+<p>Declaration:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">require_auth</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">Name</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="k">def</span> <span class="nf">require_auth2</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">Name</span><span class="p">,</span> <span class="n">permission</span><span class="p">:</span> <span class="n">Name</span><span class="p">):</span>
+    <span class="o">...</span>
+</code></pre></div>
+<p>Explanation:</p>
+<p>Both of these functions throw an exception when the account does not exist or the specified account's permission is not detected. The difference is that <code>require_auth</code> checks for the existence of the 'active' permission, while <code>require_auth2</code> can check for a specified permission.</p>
+<h2 id="publication_timecurrent_time">publication_time/current_time</h2>
+<h2 id="check">check</h2>
+<p>Declaration:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">test</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</code></pre></div>
+<p>Explanation:</p>
+<p>If test is False, an exception will be thrown. This function is frequently used in smart contracts, and can be referenced in the code of <code>token.codon</code>.</p>
+<h2 id="example-code">Example Code:</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">chain.action</span> <span class="kn">import</span> <span class="n">has_auth</span><span class="p">,</span> <span class="n">require_auth</span><span class="p">,</span> <span class="n">require_auth2</span><span class="p">,</span> <span class="n">is_account</span>
+<span class="kn">from</span> <span class="nn">chain.contract</span> <span class="kn">import</span> <span class="n">Contract</span>
+
+<span class="nd">@contract</span><span class="p">(</span><span class="n">main</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">MyContract</span><span class="p">(</span><span class="n">Contract</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="nd">@action</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">has_auth</span><span class="p">(</span><span class="n">n</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+
+        <span class="n">require_auth</span><span class="p">(</span><span class="n">n</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+        <span class="n">require_auth2</span><span class="p">(</span><span class="n">n</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="n">n</span><span class="s2">&quot;active&quot;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">is_account</span><span class="p">(</span><span class="n">n</span><span class="s2">&quot;hello&quot;</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">is_account</span><span class="p">(</span><span class="n">n</span><span class="s2">&quot;hello&quot;</span><span class="p">))</span>
+        <span class="k">return</span>
+</code></pre></div>
+<p>Compilation:</p>
+<div class="highlight"><pre><span></span><code>python-contract<span class="w"> </span>build<span class="w"> </span>common_example.codon
+</code></pre></div>
+<p>Test code:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">test_common</span><span class="p">():</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">init_test</span><span class="p">(</span><span class="s1">&#39;common_example&#39;</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">push_action</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="p">{</span><span class="s1">&#39;hello&#39;</span><span class="p">:</span> <span class="s1">&#39;active&#39;</span><span class="p">})</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">produce_block</span><span class="p">()</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;++++++++++</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;elapsed&#39;</span><span class="p">])</span>
+</code></pre></div>
+<p>Test:</p>
+<div class="highlight"><pre><span></span><code>ipyeos<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>-s<span class="w"> </span>-x<span class="w"> </span>test.py<span class="w"> </span>-k<span class="w"> </span>test_common
+</code></pre></div>
+<p>Output:
+<div class="highlight"><pre><span></span><code>[(hello,test)-&gt;hello]: CONSOLE OUTPUT BEGIN =====================
+True
+True
+
+[(hello,test)-&gt;hello]: CONSOLE OUTPUT END   =====================
+</code></pre></div></p>
 
 
 
@@ -760,10 +636,10 @@ public_key signature symbol asset extended_asset
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.19047be9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
       
     
   
@@ -771,7 +647,7 @@ public_key signature symbol asset extended_asset
 console.log("hello, plugin")
 var mkdocs_chat_plugin = {'param': '', 'docs_chat_endpoint': 'https://127.0.0.1/chat'};
 </script>
-<script src="../js/chat-dialog-plugin.js"></script>
+<script src="../../js/chat-dialog-plugin.js"></script>
 
         </body>
 </html>
